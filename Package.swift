@@ -17,7 +17,7 @@ let targets: [Target] = [
 let package = Package(
     name: "ZIPFoundation",
     platforms: [
-        .iOS("14.0")
+        .iOS("15.2"), .macOS("11.0")
     ],
     products: [
         .library(name: "ZIPFoundation", targets: ["ZIPFoundation"])
