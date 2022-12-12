@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.6
 import PackageDescription
 
 #if canImport(Compression)
@@ -17,7 +17,7 @@ let targets: [Target] = [
 let package = Package(
     name: "ZIPFoundation",
     platforms: [
-        .iOS("15.2"), .macOS("11.0")
+        .iOS("15.2"), .macCatalyst("14.0")
     ],
     products: [
         .library(name: "ZIPFoundation", targets: ["ZIPFoundation"])
